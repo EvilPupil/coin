@@ -237,7 +237,7 @@ class Coin extends PluginBase implements Listener{
 		try{
 			    $this->getLogger()->info("Checking for updates... It may be take some while.");
 
-				$desc = yaml_parse(Utils::getURL("https://raw.githubusercontent.com/Undefinedmes/Coins/master/Coin/plugin.yml"));
+				$desc = yaml_parse(Utils::getURL("https://raw.githubusercontent.com/Undefinedmes/coin/master/Coin/plugin.yml"));
 				
 				$description = $this->getDescription();
 				if(version_compare($description->getVersion(), $desc["version"]) < 0){
