@@ -1,0 +1,40 @@
+name: Coin
+main: Coin\Coin
+version: "1.0.0"
+api:
+- 1.0.0
+- 1.1.0
+- 1.2.0
+- 1.2.1
+- 1.3.0
+- 1.3.1
+- 1.4.0
+- 1.4.1
+
+author: Undefined.'
+description: This is Coin Plug-in
+
+permissions:
+  Coin.*:
+    default: op
+    description: null
+  children:
+    Coin.command.*:
+      default: op
+      description: null
+    children: 
+      Coin.command.setcoin:
+        default: op
+        description: null
+      Coin.command.addcoin:
+        default: op
+        description: null
+      Coin.command.reducecoin:
+        default: op
+        description: null
+      Coin.command.paycoin:
+        default: true
+        description: null
+      Coin.command.mycoin:
+        default: true
+        description: null
